@@ -6,45 +6,28 @@ A complete multimodal classification pipeline that predicts book genres from **c
 
 ---
 
-## 🗂️ Project Structure
-
-```
-multimodal-book-classification/
-│
-├── README.md                   ← You are here
-├── requirements.txt            ← Python dependencies
-│
-├── notebooks/
-│   └── full_project.ipynb      ← Complete end-to-end notebook
-│
-├── reports/
-│   ├── logistic_regression_report.md
-│   ├── svm_report.md
-│   ├── bilstm_report.md
-│   ├── custom_cnn_report.md
-│   ├── resnet50_report.md
-│   └── fusion_rf_report.md
-│
-├── models/
-│   ├── logistic_regression.py  ← TF-IDF + Logistic Regression
-│   ├── svm.py                  ← TF-IDF + LinearSVC
-│   ├── bilstm.py               ← Embedding + Bidirectional LSTM
-│   ├── custom_cnn.py           ← Custom 4-block CNN
-│   ├── resnet50.py             ← ResNet50 Transfer Learning
-│   └── fusion_rf.py            ← Multimodal Fusion (TF-IDF + ResNet → RF)
-│
-├── images/
-│   ├── confusion_matrix.png    ← Aggregated confusion matrices
-│   ├── accuracy_plot.png       ← Model comparison bar chart
-│   └── architecture.png        ← Pipeline architecture diagram
-│
-└── src/
-    ├── preprocessing.py        ← Data loading, cleaning, splitting
-    ├── text_models.py          ← TF-IDF vectorization + tokenization
-    ├── image_models.py         ← Image data generators + CNN/ResNet helpers
-    └── fusion.py               ← Feature extraction + fusion pipeline
-```
-
+# Multimodal Book Classification
+This project classifies books using:
+1. Models
+TEXT
+Preprocessing
+Clean Text
+TF-IDF Models
+Logistic Regression — يوسف رجب
+SVM — محمود عماد
+Deep Learning Pipeline
+Tokenization → Embedding → LSTM — محمود محمد
+IMAGE
+Image Preprocessing
+Resize Images to 224 × 224
+Image Models
+CNN — يوسف عبدالحليم
+ResNet50 — مصطفي فؤاد
+FUSION — عبدالرحمن بدوي
+Fusion Pipeline
+Text Features: TF-IDF
+Image Features: CNN + ResNet
+Classifier: Random Forest
 ---
 
 ## 🎯 Task
