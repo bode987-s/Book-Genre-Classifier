@@ -228,6 +228,7 @@ def plot_history(history, title="Training History"):
 # ─────────────────────────────────────────────────────────────────────────
 # Script entry point – quick sanity check
 # ─────────────────────────────────────────────────────────────────────────
+# this function is written as a referral for each model that exists in a seperate file 
 
 if __name__ == "__main__":
     df, le = load_and_prepare_dataframe()
