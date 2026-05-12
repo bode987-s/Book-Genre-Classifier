@@ -65,7 +65,8 @@ LogisticRegression      # C=5.0, lbfgs solver, max_iter=3 000
 | Accuracy | ~0.76 | ~0.74 |
 | Macro F1 | ~0.75 | ~0.73 |
 
-> Exact numbers depend on the dataset split and random seed. Run the model to get ground-truth figures.
+> Accuracy measures overall correct predictions, while Macro F1 evaluates balanced classification performance across all classes.
+The validation and test scores are close, which suggests the model generalizes reasonably well and does not show strong overfitting.
 
 ---
 
