@@ -7,28 +7,29 @@ A complete multimodal classification pipeline that predicts book genres from **c
 ---
 
 # Multimodal Book Classification
-This project classifies books using:
-1. Models
+Pipeline Architecture
+
 TEXT
-Preprocessing
-Clean Text
-TF-IDF Models
-Logistic Regression — يوسف رجب
-SVM — محمود عماد
-Deep Learning Pipeline
-Tokenization → Embedding → LSTM — محمود محمد
+├── Clean Text
+├── TF-IDF
+│   ├── Logistic Regression
+│   └── SVM
+└── Tokenization → Embedding → LSTM
+
 IMAGE
-Image Preprocessing
-Resize Images to 224 × 224
-Image Models
-CNN — يوسف عبدالحليم
-ResNet50 — مصطفي فؤاد
-FUSION — عبدالرحمن بدوي
-Fusion Pipeline
-Text Features: TF-IDF
-Image Features: CNN + ResNet
-Classifier: Random Forest
----
+├── Resize (224×224)
+├── CNN
+└── ResNet50
+
+FUSION
+├── Text Features (TF-IDF)
+├── Image Features (CNN + ResNet)
+└── Random Forest
+
+EVALUATION
+├── Accuracy
+├── Precision / Recall / F1
+└── Confusion Matrix
 
 ## 🎯 Task
 
