@@ -1,43 +1,87 @@
-# Multimodal Book Classification
+# **\# Multimodal Book Classification**
 
-This project classifies books using: 
+# 
 
-1. models: 
+# **This project classifies books using:** 
 
-1.1 TEXT
-    ├── Clean Text
-    ├── TF-IDF 
-    │       ├── Logistic Regression يوسف رجب  
-    │       └── SVM  محمود عماد
-    └── Tokenization → Embedding → LSTM محمود محمد 
+# 
 
-1.2 IMAGE
-    ├── Resize (224×224)
-    ├── CNN يوسف عبدالحليم 
-    └── ResNet50 مصطفي فؤاد
+# **1\. Models**
 
-1.3 FUSION عبدالرحمن بدوي 
-    ├── Text Features (TF-IDF)
-    ├── Image Features (CNN + ResNet)
-    └── Random Forest
+## **TEXT**
 
-1.4 EVALUATION 
-    ├── Accuracy
-    ├── Precision / Recall / F1
-    └── Confusion Matrix
+### **Preprocessing**
 
-2. Scrapped Dataset
-   Books dataset containing:
-- title
-- description
-- cover image
-- category
+* **Clean Text**
 
-3. Technologies
-- Python
-- TensorFlow / Keras
-- Scikit-learn
-- Pandas
-- NumPy
+### **TF-IDF Models**
 
-4. Kaggle workspace for model training: using GPU P100
+* **Logistic Regression** — يوسف رجب  
+* **SVM** — محمود عماد
+
+### **Deep Learning Pipeline**
+
+* **Tokenization → Embedding → LSTM** — محمود محمد
+
+---
+
+## **IMAGE**
+
+### **Image Preprocessing**
+
+* **Resize Images** to `224 × 224`
+
+### **Image Models**
+
+* **CNN** — يوسف عبدالحليم  
+* **ResNet50** — مصطفي فؤاد
+
+---
+
+## **FUSION — عبدالرحمن بدوي**
+
+### **Fusion Pipeline**
+
+* **Text Features:** TF-IDF  
+* **Image Features:** CNN \+ ResNet  
+* **Classifier:** Random Forest
+
+---
+
+## **EVALUATION**
+
+### **Evaluation Metrics**
+
+* **Accuracy**  
+* **Precision**  
+* **Recall**  
+* **F1-Score**  
+* **Confusion Matrix**
+
+---
+
+# **2\. Dataset**
+
+The dataset contains book information including:
+
+* **Title**  
+* **Description**  
+* **Cover Image**  
+* **Category**
+
+---
+
+# **3\. Technologies**
+
+* **Python**  
+* **TensorFlow / Keras**  
+* **Scikit-learn**  
+* **Pandas**  
+* **NumPy**
+
+---
+
+**4\. workspace**
+
+*  **Kaggle for model training: using GPU P100**
+
