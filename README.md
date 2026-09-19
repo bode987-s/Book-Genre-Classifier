@@ -7,28 +7,24 @@ A complete multimodal classification pipeline that predicts book genres from **c
 ---
 
 # Multimodal Book Classification
-Pipeline Architecture
+##  Pipeline Architecture
 
-TEXT
-├── Clean Text
-├── TF-IDF 
-│   ├── Logistic Regression 
-│   └── SVM 
-└── Tokenization → Embedding → LSTM 
-IMAGE
-├── Resize (224×224)
-├── CNN 
-└── ResNet50 
-
-FUSION 
-├── Text Features (TF-IDF)
-├── Image Features (CNN + ResNet)
-└── Random Forest
-
-EVALUATION 
-├── Accuracy
-├── Precision / Recall / F1
-└── Confusion Matrix
+| Stage        | Sub-Stage / Method                     | Details / Models Used                  |
+|--------------|----------------------------------------|----------------------------------------|
+| **Text**     | Clean Text                             | Preprocessing                          |
+|              | TF-IDF                                 | Feature extraction                     |
+|              | ├── Logistic Regression                | Classification                         |
+|              | └── SVM                                | Classification                         |
+|              | Tokenization → Embedding → LSTM        | Deep learning sequence modeling        |
+| **Image**    | Resize (224×224)                       | Preprocessing                          |
+|              | CNN                                    | Feature extraction                     |
+|              | ResNet50                               | Transfer learning                      |
+| **Fusion**   | Text Features (TF-IDF)                 | Combined representation                |
+|              | Image Features (CNN + ResNet)          | Combined representation                |
+|              | Random Forest                          | Final classification                   |
+| **Evaluation** | Accuracy                             | Metric                                 |
+|              | Precision / Recall / F1                | Metrics                                |
+|              | Confusion Matrix                       | Visualization                          |
 
 ## 🎯 Task
 
