@@ -12,16 +12,15 @@ Pipeline Architecture
 TEXT
 ├── Clean Text
 ├── TF-IDF 
-│   ├── Logistic Regression يوسف
-│   └── SVM  محمود عماد
-└── Tokenization → Embedding → LSTM محمود محمد
-
+│   ├── Logistic Regression 
+│   └── SVM 
+└── Tokenization → Embedding → LSTM 
 IMAGE
 ├── Resize (224×224)
-├── CNN يوسف عبدالحليم
-└── ResNet50 مصطفي فؤاد
+├── CNN 
+└── ResNet50 
 
-FUSION عبدالرحمن بدوي
+FUSION 
 ├── Text Features (TF-IDF)
 ├── Image Features (CNN + ResNet)
 └── Random Forest
